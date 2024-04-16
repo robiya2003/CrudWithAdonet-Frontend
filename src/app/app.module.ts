@@ -11,6 +11,11 @@ import { UpdateComponent } from './components/update/update.component';
 import { DeleteComponent } from './components/delete/delete.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { NgbAlert, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { Component } from '@angular/core';
+import { DecimalPipe } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { NgbPaginationModule, NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,10 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbAlert,
+    NgbModule,
+    DecimalPipe, FormsModule, NgbTypeaheadModule, NgbPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
