@@ -1,12 +1,13 @@
 <p>create works!</p>
 <form class="submit-form">
     @if(!isSubmitted){
-        <div class="form-group">
+      <h1>Registratsiya 1</h1>
+        <div class="form-group buttons">
             <label for="name">Name</label>
             <input type="text" class="form-control" id="name" placeholder="enter name" [(ngModel)]="setvalue.name" name="name">
         </div>
 
-        <div class="form-group">
+        <div class="form-group buttons">
           <label for="phoneNumber">Phone number</label>
           <input type="phoneNumber" class="form-control" id="phoneNumber" aria-describedby="phoneNumberHelp" placeholder="Enter name" [(ngModel)]="setvalue.phoneNumber" name="phoneNumber">
           <small id="phoneNumberHelp" class="form-text text-muted">We'll never share your number with anyone else.</small>
@@ -15,13 +16,13 @@
 
 
 
-        <div class="form-group">
+        <div class="form-group buttons">
           <label for="email">Email address</label>
           <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="setvalue.email" name="email">
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
     
-        <div class="form-group">
+        <div class="form-group buttons">
           <label for="password">Password</label>
           <input type="password" class="form-control" id="password" placeholder="Password" required [(ngModel)]="setvalue.password" name="password">
         </div>
@@ -29,8 +30,54 @@
         
     
         <br>
+        
         <button type="submit" class="btn btn-primary" (click)="setUser()">Submit</button> 
-    } @else {
+
+        <br>
+        <br>
+        <br> <br>
+        <br>
+        <br>
+    <div class="bodyy">
+      <h1 class="signup">Registratsiya 2</h1>
+      <div style="margin: 20px;">
+        
+      <div class="form-group buttons">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="enter name" [(ngModel)]="setvalue.name" name="name">
+    </div>
+
+    <div class="form-group buttons">
+      <label for="phoneNumber">Phone number</label>
+      <input type="phoneNumber" class="form-control" id="phoneNumber" aria-describedby="phoneNumberHelp" placeholder="Enter name" [(ngModel)]="setvalue.phoneNumber" name="phoneNumber">
+      <small id="phoneNumberHelp" class="form-text text-muted">We'll never share your number with anyone else.</small>
+    </div>
+
+
+
+
+    <div class="form-group buttons">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="setvalue.email" name="email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    <div class="form-group buttons">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" placeholder="Password" required [(ngModel)]="setvalue.password" name="password">
+    </div>
+
+    
+    <br>
+    <div style="justify-content: center; display: flex;">
+      <button type="submit" class="btn btn-primary" (click)="setUser()" style="background-color: rgb(177, 121, 52); width: 160px;">Submit</button> 
+    </div>
+    
+      </div>
+
+    </div>
+       
+      } @else {
         <h1>Ma'lumotlar Saqlandi</h1>
     }
 </form>
