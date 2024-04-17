@@ -1,7 +1,7 @@
 export interface GetAll {
     id:number,
     name:string,
-    phonenumber:string,
+    phoneNumber:string,
     email:string,
     password:string
 }

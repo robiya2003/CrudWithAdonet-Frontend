@@ -5,7 +5,16 @@
             <label for="name">Name</label>
             <input type="text" class="form-control" id="name" placeholder="enter name" [(ngModel)]="setvalue.name" name="name">
         </div>
-    
+
+        <div class="form-group">
+          <label for="phoneNumber">Phone number</label>
+          <input type="phoneNumber" class="form-control" id="phoneNumber" aria-describedby="phoneNumberHelp" placeholder="Enter name" [(ngModel)]="setvalue.phoneNumber" name="phoneNumber">
+          <small id="phoneNumberHelp" class="form-text text-muted">We'll never share your number with anyone else.</small>
+        </div>
+
+
+
+
         <div class="form-group">
           <label for="email">Email address</label>
           <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="setvalue.email" name="email">
