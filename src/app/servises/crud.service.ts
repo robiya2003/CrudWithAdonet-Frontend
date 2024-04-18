@@ -17,4 +17,15 @@ baseurl:string="https://localhost:7153/api/Users/";
   create(data:any):Observable<any>{
     return this.http.post<any>(this.baseurl+"PostUsers",data)
   }
+  getById(id: number): Observable<CreateUser> {
+    return this.http.get<CreateUser>(this.baseurl + `GetById?id=${id}`)
+  }
+
+  update(id: number, data: CreateUser): Observable<CreateUser> {
+    return this.http.put<CreateUser>(this.baseurl + `PutUsers?id=${id}`, data)
+  }
+
+  delete(id: number): Observable<boolean> {
+    return this.http.delete<boolean>(this.baseurl + `DeleteUsers?id=${id}`)
+  }
 }
